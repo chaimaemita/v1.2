@@ -31,29 +31,27 @@
             <div class="col my-2" >
                   <?php
                     require 'connect.php';
-                    $query="SELECT SUM(name) AS total FROM students";
+                    $query="SELECT * from students";
                     $count=mysqli_query($con,$query) ;
-                    $row = mysqli_fetch_assoc($count); 
-                    $som = $row['total'];
+                    $row = mysqli_num_rows($count); 
                   ?>
               <div class="p-1 px-3 rounded" style="background: #F0F9FF;" >
               <i class="bi bi-mortarboard fs-3" style="color: #74C1ED;"></i>
               <p>Student</p>
-              <p class="text-end fw-bold fs-4"><?php echo $som; ?></p>
+              <p class="text-end fw-bold fs-4"><?php echo $row; ?></p>
             </div>
             </div>  
             <div class="col my-2" >
                   <?php
                     require 'connect.php';
-                    $query="SELECT SUM(name) AS total FROM students";
+                    $query="SELECT * from courses";
                     $count=mysqli_query($con,$query) ;
-                    $row = mysqli_fetch_assoc($count); 
-                    $som = $row['total'];
+                    $row = mysqli_num_rows($count); 
                   ?>
               <div class="p-1 px-3 rounded" style="background: #FEF6FB;">
                 <i class="bi bi-bookmark fs-3" style="color: #EE95C5;"></i>
                 <p>Course</p>
-                <p class="text-end fw-bold fs-4"><?php echo $som; ?></p>
+                <p class="text-end fw-bold fs-4"><?php echo $row; ?></p>
               </div>
             </div>       
             <div class="col my-2">
