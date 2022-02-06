@@ -1,5 +1,5 @@
       <input type="checkbox" id="sbar">
-      <div class="col-2" id="side" style="background-color:  #FAFFC1;">
+      <div class="col-2" id="side" style="background-color:  #FAFFC1; height: 100vh;">
         <div class=" text">
           <h1 class="fw-bold fs-5 p-3"><span class="border-start pe-2 border-4 border-info" id="logo">E-classe</span  ></h1>
         </div>
